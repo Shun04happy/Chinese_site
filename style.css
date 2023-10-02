@@ -1,0 +1,746 @@
+@charset "utf-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+body{
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header{
+    height: 70px;
+    z-index: 10;
+    position: fixed;
+    background-color: #fff;
+    width: 100vw;
+    border-bottom: 1px solid #E8EBEF;
+    box-sizing: border-box;
+}
+
+.header .inner{
+    position: relative;
+}
+
+.header h1{
+    line-height: 70px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.header h1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.header_navi{
+    position: fixed;
+    top: 0;
+    right: 70px;
+    list-style: none;
+    margin-right: 100px;
+}
+
+.header_navi li {
+    line-height: 70px;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.header_navi li a{
+    text-decoration: none;
+    color:#FC1784;
+    transition: all .3 ease;
+}
+
+.header_navi li a:hover{
+    opacity: .6;
+}
+
+.nav-btn{
+    display:none;
+}
+
+.key_visual{
+    text-align: center;
+    padding-top: 70px;
+}
+
+.key_visual_ttl{
+    padding:100px 0 120px;
+    background: url(images/woman-3190829__480.webp) no-repeat center center /cover;
+}
+.key_visual_ttl h2{
+    font-size:45px;
+    position: relative;
+    line-height: 75px;
+    margin-bottom: 35px;
+    letter-spacing: 6px;
+}
+
+.key_visual h2::before{
+    content:"オンライン中国会話";
+    font-size: 30px;
+    position: absolute;
+    top:-70px;
+    letter-spacing: 2.5px;
+}
+
+.btn{
+    text-decoration: none;
+    background-color: #FC1784;
+    height: 70px;
+    font-size:28px;
+    line-height: 70px;
+    padding: 0 80px;
+    border-radius: 40px;
+    display: inline-block;
+    color: #fff;
+    box-shadow: 0 5px 0 #C91269;
+    letter-spacing: 2.5px;
+    transition: all .3s ease;
+}
+
+.btn:hover{
+    background-color: #E21476;
+}
+
+.sec_conv{
+    text-align: center;
+    padding: 50px 0 45px;
+    /* background-color: #FFF2AA; */
+}
+
+.sec_conv p:first-of-type{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.main .inner{
+    width: 980px;
+    display: inline-block;
+    margin-bottom: 75px;
+}
+
+.main h3{
+    font-size: 35px;
+    padding-top: 60px;
+    letter-spacing: 3.5px;
+}
+
+.sec_sub_ttl{
+    font-size: 18px;
+    padding: 30px 0 50px ;
+}
+
+.sec01{
+    text-align: center;
+    background-color: #F6F5EF;
+}
+
+.sec01 .point-area{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+}
+
+.sec01 img{
+    width: 440px;
+    text-align: center;
+}
+
+.sec01 ul{
+    list-style: none;
+}
+.sec01 ul li{
+    font-size: 16px;
+    line-height: 1.5em;
+    padding-top: 25px;
+    text-align: left;
+}
+
+.sec01 ul li + li{
+    
+}
+
+.sec02{
+    text-align: center;
+}
+
+.sec02 .strongpoint_area_groups{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sec02 .strongpoint_area_groups:first-of-type{
+    margin-bottom: 40px;
+}
+
+.sec02 .strongpoint_area {
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.sec02 .strongpoint_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #E8F8F3;
+}
+
+.sec02 .strongpoint_img img{
+    width: 60px;
+    margin-top: 20px;  
+}
+
+.sec02 .strongpoint{
+    width: 200px;
+    margin-left: 20px;
+}
+
+.sec02 .strongpoint p{
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.sec02 .point_red{
+    color: #ec6800;
+}
+
+.sec03{
+    text-align: center;
+    background-color: #F3F5ED;
+}
+
+
+.sec03 ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sec03 ul li{
+    border: 5px solid #ec6800;
+    display: inline-block;
+    background-color: #fff;
+    height: 180px;
+    width: 314px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(0,0,0,30%);
+}
+
+.sec03 .course_name{
+    border-radius: 0 0 50% 50%;
+    background-color: #ec6800;
+    color: #fff;
+    height: 55px;
+    width: 314px;
+    margin-left: -5px;
+    padding-bottom: 12px;
+}
+
+.sec03 .course_name h4{
+    padding-top: 12px;
+    font-size: 22px;
+}
+
+.sec03 .course_name p{
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.sec03 .price-area{
+    padding-top: 25px;
+}
+
+.sec03 .price-area p:first-of-type{
+    font-size: 20px;    
+    margin-bottom: 10px;
+}
+
+.sec03 .price-area p:first-of-type span{
+    font-size: 38px;
+    color: #0E4199;
+    padding: 0 5px 0px 10px;
+    font-weight: bold;
+}
+
+.sec03 .price-area p:last-of-type{
+    font-size: 15px;
+}
+
+.sec04{
+    text-align: center;
+    background-color: #F0F1F2;
+}
+
+.sec04 ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sec04 ul li{
+    display: flex;
+    border: 1px solid #e2e3e4;
+    width: 470px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,20%);
+}
+
+.sec04 ul li:nth-of-type(5),.sec04 ul li:nth-of-type(6){
+    margin-bottom: 0;
+}
+
+.sec04 ul li img{
+    width: 140px;
+}
+
+.sec04 .material-content{
+    padding: 30px;
+}
+
+.sec04 .material-content p:first-of-type{
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.sec04 .material-content p:last-of-type{
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    padding-top: 10px;
+}
+
+.sec05{
+    text-align: center;
+}
+
+.sec05 ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 50px;
+}
+
+
+.sec05 .uservoice{
+    position: relative;
+    line-height: 32px;
+    width: 470px;
+    border: 4px solid #1F7AD9 ;
+    border-radius: 20px;
+    box-sizing: border-box;
+    letter-spacing: 1.5px;
+    padding: 40px;
+    text-align: left;
+}
+
+.sec05 .uservoice::before{
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 1;
+    border-style: solid;
+    border-color: #FFF transparent;
+    border-width: 25px 25px 0 0;
+    bottom: -16px;
+    left: 10%;
+    margin-left: -10px;
+}
+
+.sec05 .uservoice::after{
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 0;
+    border-style: solid;
+    border-color: #1F7AD9 transparent;
+    border-width: 25px 25px 0 0;
+    bottom: -25px;
+    left: 10%;
+    margin-left: -14px;
+}
+
+.sec05 .user-area{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.sec05 .user-area img{
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+.sec05 .user_name{
+    text-align: left;
+}
+
+.sec05 .user_name p:first-of-type{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sec05 .user_name p:last-of-type{
+    color: #787878;
+}
+
+.sec06{
+    text-align: center;
+    background-color: #F1F1F1;
+}
+
+.sec06 ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.sec06 ul li{
+
+}
+
+.sec06 .signup-flow-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #8dc21f;
+    padding: 30px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    background-color: #fff;
+}
+
+.sec06 .signup-flow-img:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-left: 15px solid #8dc21f;
+}
+
+.sec06 ul li:last-of-type .signup-flow-img::before{
+    display: none;
+}
+
+.sec06 .signup-flow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec06 .signup-flow p:first-of-type{
+    font-size: 10px;
+    display: inline-block;
+}
+
+.sec06 .signup-flow p:last-of-type{
+    border: 1px solid #787878;
+    display: inline-block;
+    border-radius: 2px;
+    width: 100px;
+    height: 20px;
+    margin-left: 10px;
+}
+.sec06 .signup-flowbtn-blue{
+    background-color: cornflowerblue;
+    color: #fff;
+    width: 120px;
+    border-radius: 15px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    margin: 0 auto;
+}
+
+.sec06 .signup-flow-img-book p{
+    font-size: 12px;
+}
+
+.sec06 .signup-flow-img-book p + p{
+    margin-top: 10px;
+}
+
+.sec06 .signup-flowbtn-red{
+    background-color: #FE0302;
+    color: #fff;
+    width: 120px;
+    border-radius: 15px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    margin: 0 auto;
+}
+
+.sec06 .signup-flow-h{
+    margin-top: 24px;
+}
+
+.sec06 .signup-flow-lesson{
+    position: relative;
+}
+
+.sec06 .signup-flow-lesson img:first-of-type{
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+    transform: translate(0, 24px);
+    z-index: 1;
+}
+
+.sec06 .signup-flow-lesson img:last-of-type{
+    z-index: 2;
+    width: 48px;
+    transform: translate(0,-54px );
+}
+.footer{
+    text-align: center;
+    background-color: #000;
+    padding-bottom: 60px;
+}
+
+.footer h4{
+    position: relative;
+    padding: 60px 0 25px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.footer h4 a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.footer h4:before{
+    content: "市場価値の高い人材になろう";
+    position: absolute;
+    top: -25px;
+    font-size: 12px;
+    padding: 60px 0 0;
+    color: #fff;
+}
+
+.sns_icon{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.sns_icon li{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    color: #fff;
+    transition: all .3 ease;
+}
+
+.sns_icon li + li{
+    margin-left: 10px;
+}
+
+.sns_icon li:hover{
+    opacity: .8;
+}
+
+.btn_facebook {
+    background-color: #4267B2;
+}
+
+.btn_twitter{
+    background-color: #05ACEF;
+}
+
+.btn_instagram{
+    background-color: #CB007E;
+}
+
+.btn_youtube{
+    background-color: #FE0302;
+}
+
+.fa-facebook-f{
+    margin-top: 4px;
+}
+
+.fa-twitter{
+    margin-top: 6px;
+    font-size: 1.7em;
+}
+
+.fa-instagram{
+    margin-top: 4px;
+}
+
+.fa-youtube{
+    margin-top: 6px;
+    font-size: 1.7em;
+}
+
+.footer_navi{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 44px;
+}
+
+.footer_navi li + li{
+    margin-left: 40px;
+}
+
+.footer_navi li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    transition: all .3 ease;
+}
+
+.footer_navi li a:hover{
+    opacity: 0.5;
+}
+
+.footer small{
+    color: #fff;
+    font-size: 12px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  
+    display: none;
+    width: 40px;
+    height: 40px;
+  
+    background-color: #f0f0f0;
+    color: #333;
+    opacity: 0.6;
+  
+    font-size: 1.6rem;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+}
